@@ -11,6 +11,6 @@ async function GetReport(worker_id, month, year) {
     });
     if (!response.ok) {
         throw new Error(`Request failed. Status: ${response.status}`);
-    }    return response.json();
+    }    return await response.json();
 }
 export{ GetReport }
