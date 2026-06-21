@@ -9,7 +9,8 @@ async function GetReport(worker_id, month, year) {
         },
         credentials: 'include'
     });
-    if (!response.ok) { throw new Error(`HTTP error! status: ${response.status}`); }
-    return response.json();
+    if (!response.ok) {
+        throw new Error(`Request failed. Status: ${response.status}`);
+    }    return response.json();
 }
 export{ GetReport }
