@@ -13,11 +13,13 @@ function EntryPage() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        addEntry({
-            ...formData,
-            worker_id: formData.worker_id.trim(),
-            full_name: formData.full_name.trim()
-        });    }
+
+        if(formData.worker_id.trim()==="" || formData.full_name.trim()===""){
+            alert("יש למלא את כל השדות");
+            return;
+        }
+
+        addEntry(formData);   }
 
     return (
         <Paper sx={{p:3}}>
