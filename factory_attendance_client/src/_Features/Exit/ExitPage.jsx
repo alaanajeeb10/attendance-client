@@ -27,8 +27,7 @@ function ExitPage() {
                     <TextField name="worker_id" label="תעודת זהות" value={formData.worker_id} onChange={handleChange} fullWidth required />
                     <TextField name="full_name" label="שם העובד" value={formData.full_name} onChange={handleChange} fullWidth required />
                     <TextField name="note" label="הערה" value={formData.note} onChange={handleChange} fullWidth />
-                    <Button type="submit" variant="contained" color="primary" disabled={isAdding}>שמור יציאה</Button>
-                </Box>
+                    <Button type="submit" variant="contained" color="primary" disabled={isAdding}>רישום יציאה</Button>                </Box>
             </form>
         </Paper>
     );
