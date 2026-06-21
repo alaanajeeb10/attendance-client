@@ -13,8 +13,11 @@ function ExitPage() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        addExit(formData);
-    }
+        addExit({
+            ...formData,
+            worker_id: formData.worker_id.trim(),
+            full_name: formData.full_name.trim()
+        });    }
 
     return (
         <Paper sx={{p:3}}>
