@@ -17,8 +17,7 @@ function ReportPage() {
 
     return (
         <Paper sx={{p:3}}>
-            <Typography variant="h3" sx={{textAlign:'center', mb:3}}>דוח חודשי לעובד</Typography>
-            <form onSubmit={handleSubmit}>
+            <Typography variant="h3" sx={{textAlign:'center', mb:3}}>דוח נוכחות חודשי לעובד</Typography>            <form onSubmit={handleSubmit}>
                 <Box sx={{ display:'flex', gap:2, mb:3, flexWrap:'wrap' }}>
                     <TextField label="תעודת זהות" value={worker_id} onChange={(e)=>{setWorkerId(e.target.value); setEnabled(false)}} required />
                     <TextField type="number" label="חודש" value={month} onChange={(e)=>{setMonth(e.target.value); setEnabled(false)}} required />
