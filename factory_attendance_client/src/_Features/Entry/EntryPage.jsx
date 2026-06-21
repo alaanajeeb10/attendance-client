@@ -26,7 +26,7 @@ function EntryPage() {
             <Typography variant="h3" sx={{textAlign:'center', mb:3}}>רישום כניסה למפעל</Typography>
             <form onSubmit={handleSubmit}>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-                    <TextField name="worker_id" label="תעודת זהות" value={formData.worker_id} onChange={handleChange} fullWidth required />
+                    <TextField name="worker_id" label="מספר עובד / תעודת זהות" value={formData.worker_id} onChange={handleChange} fullWidth required />
                     <TextField name="full_name" label="שם העובד" value={formData.full_name} onChange={handleChange} fullWidth required />
                     <TextField name="note" label="הערה (לא חובה)"value={formData.note} onChange={handleChange} fullWidth />
                     <Button type="submit" variant="contained" color="primary" disabled={isAdding}>שמור כניסה</Button>
