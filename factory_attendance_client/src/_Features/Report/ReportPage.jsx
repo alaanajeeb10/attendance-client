@@ -26,7 +26,7 @@ function ReportPage() {
                 </Box>
             </form>
             {isLoading && <p>Loading...</p>}
-            {isError && <p>Error: {error.message}</p>}
+            {isError && <p>אירעה שגיאה בטעינת הנתונים</p>}
             {ReportArr && ReportArr.length === 0 && <Typography>לא נמצאו רשומות לעובד בחודש שנבחר</Typography>}
             {ReportArr && ReportArr.length > 0 && <Table>
                 <TableHead>
